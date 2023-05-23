@@ -32,22 +32,29 @@ export default function Logo({
         }}
       >
         {isMounted && isDarkMode && (
+          // <Image
+          //   src={settings?.dark_logo?.original ?? darkLogo}
+          //   layout="fill"
+          //   objectFit="contain"
+          //   loading="eager"
+          //   alt={settings?.siteTitle ?? 'Dark Logo'}
+          // />
           <Image
-            src={settings?.dark_logo?.original ?? darkLogo}
-            layout="fill"
+          src = {'/image/logo.jpeg'}
+          layout="fill"
             objectFit="contain"
             loading="eager"
-            alt={settings?.siteTitle ?? 'Dark Logo'}
-          />
+            alt={settings?.siteTitle ?? 'GoBoss Logo'}
+        />
         )}
         {isMounted && !isDarkMode && (
-          <Image
-            src={settings?.logo?.original ?? lightLogo}
-            layout="fill"
-            objectFit="contain"
-            loading="eager"
-            alt={settings?.siteTitle ?? 'Light Logo'}
-          />
+      <Image
+      src = {'/image/logo.jpeg'}
+      layout="fill"
+        objectFit="contain"
+        loading="eager"
+        alt={settings?.siteTitle ?? 'GoBoss Logo'}
+    />
         )}
       </span>
     </AnchorLink>
