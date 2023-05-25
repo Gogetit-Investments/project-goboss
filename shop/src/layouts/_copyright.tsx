@@ -6,7 +6,7 @@ export default function Copyright({ className }: { className?: string }) {
   const { t } = useTranslation('common');
   return (
     <div className={cn('tracking-[0.2px]', className)}>
-      &copy; {t('text-copy-right')} {currentYear} {t('text-copy-right-by')}{' '}
+      &copy; {t('text-copy-right')} {currentYear}. {' '}
       <a
         href="https://goboss.com.ng"
         target="_blank"
