@@ -1,6 +1,6 @@
 <?php
 
-define('APP_NOTICE_DOMAIN', config('shop.app_notice_domain'));
+// define('APP_NOTICE_DOMAIN', config('shop.app_notice_domain'));
 define('DEFAULT_LANGUAGE', config('shop.default_language'));
 define('TRANSLATION_ENABLED', config('shop.translation_enabled'));
 define('DEFAULT_CURRENCY', config('shop.default_currency'));
